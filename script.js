@@ -23,13 +23,13 @@ const projects = [
     img: "./projectImages/Portfolio.png",
     title: "This Personal Website",
     descrption:
-      "Believe it or not, hiring managers were indimidated by me, and ignoring my applications! so I built this site to show you, really, i'm just like everyone else. I've probably even (intentionally) left a few mistakes in."
+      "Believe it or not, hiring managers were indimidated by me, and ignoring my applications! so I built this site to show you, really, I'm just like everyone else. I've probably even (Intentionally) left a few mistakes in."
   },
   {
     img: "./projectImages/WhoWantsToHireLiam.png",
     title: "Who Wants To Hire Liam? Quiz Game!",
     descrption:
-      "Learn a little bit about me, what makes me so much better than all the other smelly Junior devs applying for this position!,"
+      "Learn a little bit about me, what makes me so much better than all the other smelly Junior devs applying for this position!"
   },
 ];
 let projectCounter = 0;
