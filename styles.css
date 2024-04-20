@@ -1,0 +1,478 @@
+:root {
+  /* ============================================= */
+  /* --color1: #3a5a40;
+  --color2: #dad7cd;
+  --color3: #f7f7f7;
+  --color4: #a3b18a; */
+  /* ============================================= */
+  /* --color1: #ff731d;
+  --color2: #fff7e9;
+  --color3: #5f9df7;
+  --color4: #1746a2; */
+  /* ============================================= */
+  --color1: #576f72;
+  --color2: #e4dccf;
+  --color3: #f0ebe3;
+  --color4: #7d9d9c;
+  /* ============================================= */
+  /* --color1: #3a5a40;
+  --color2: #dad7cd;
+  --color3: #f7f7f7;
+  --color4: #a3b18a; */
+  /* ============================================= */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  background-color: var(--color2);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+/* ================================================= */
+/* HEADING */
+
+.header {
+  position: absolute;
+  min-height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color1);
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  /* min-width: 730px; */
+  width: 100%;
+}
+#title {
+  margin-left: 20px;
+}
+.navLinks {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.minH {
+  min-height: 500px;
+  background-color: black;
+}
+/* ================================================= */
+/* LANDING PAGE THING */
+.intro-cont {
+  width: 80vw;
+
+  position: absolute;
+  /* in relation to PARENTS size! */
+  left: 50%;
+  top: 50%;
+  /* in relation to ELEMENT size! */
+  transform: translate(-50%, -50%);
+}
+.introSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+.introText {
+  max-width: 40%;
+}
+
+#liamPhoto {
+  /* margin: 20px; */
+  max-width: 300px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--color1);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+#btnTop {
+  margin-top: 30px;
+}
+/* ================================================= */
+/* SKILLS */
+
+.skillsContainer {
+  background-color: var(--color2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 100vh;
+  padding-top: 50px;
+  /* height: 100vh; */
+}
+.logo {
+  width: 300px;
+}
+.skillsText,
+.skillsToBeText {
+  width: 100%;
+  text-align: center;
+  padding: 10%;
+  margin: 0 auto;
+  background-color: var(--color1);
+  border-radius: 12px;
+  color: var(--color2);
+}
+.skillsToBeImages,
+.skillsImages {
+  padding: 50px;
+  margin: 0 auto;
+  /* background-color: var(--color2); */
+}
+
+/* ================================================= */
+/* PROJECTS */
+.projectsContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+#projectsHeading {
+  margin-top: 200px;
+}
+.projectsCarousel {
+  width: 1000px;
+  background-color: var(--color1);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  box-shadow: 12px 12px 24px;
+  position: relative;
+}
+.projectImage {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 5px 12px 24px rgba(0, 0, 0, 0.8);
+}
+.projectTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color3);
+}
+.projectDescription {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: var(--color2);
+}
+/* controls for carousel */
+.btnCarousel {
+  background-color: var(--color3);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.btnLeft {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.btnRight {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.btnIcon {
+  height: 36px;
+  width: 36px;
+  stroke: var(--color1);
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 40px);
+  display: flex;
+  gap: 12px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  /* background-color: var(--color3); */
+  border: 2px solid var(--color1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dotFill {
+  background-color: var(--color1);
+}
+.dotActive {
+  background-color: var(--color3);
+  border: 2px solid var(--color4);
+}
+
+.tuteProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.tuteImage {
+  width: 400px;
+  height: 300px;
+  border-radius: 12px;
+}
+.tuteProject {
+  width: 500px;
+  background-color: var(--color1);
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 12px 12px 24px;
+  padding: 20px;
+  color: var(--color2);
+}
+.tuteProject p {
+  padding-top: 15px;
+}
+#tuteHeading {
+  text-align: center;
+  margin-top: 100px;
+}
+/* ================================================= */
+/* CONTACT ME */
+.contactMeContainer {
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+.contactMeSubContainer {
+  margin: 0 auto;
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  border: 8px solid var(--color1);
+  box-shadow: 8px 8px 24px;
+  font-size: 30px;
+}
+.contactMeForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input,
+select {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border: 2px solid black;
+}
+
+#inputMessage {
+  height: 200px;
+  width: 100%;
+  line-height: 150%;
+  padding: 10px;
+  display: block;
+  border: 2px solid black;
+  resize: none;
+}
+#btnForm {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ================================================= */
+/* FOOTER */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 10vh;
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnCV:link,
+.btnCV:visited {
+  margin-left: 10px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+/* ================================================= */
+/* Media Query Stuff */
+
+@media (max-width: 1050px) {
+  .projectsCarousel {
+    width: 800px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projectsCarousel {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  .navLinks {
+    display: none;
+  }
+  .intro-cont {
+    /* width: 100%; */
+    /* margin-top: 7vh; */
+    /* margin-top: 35px; */
+  }
+  .introSection {
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: center;
+  align-items: center; */
+  }
+  .introText {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /*  */
+  .skillsContainer {
+    margin-top: 150vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .skillsToBeImages,
+  .skillsImages {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  h2 {
+    /* padding-top: 15px; */
+    font-size: 26px;
+  }
+  /* .intro-cont {
+    margin-top: 30vh;
+  }   */
+  #introHeading {
+    margin: 0px;
+  }
+  #liamPhoto {
+    /* margin: 20px; */
+    max-width: 250px;
+  }
+  .projectsCarousel {
+    width: 350px;
+    height: 650px;
+  }
+  .projectImage {
+    width: 250px;
+    min-height: 200px;
+  }
+  .tuteProject {
+    width: 350px;
+  }
+  .tuteImage {
+    width: 300px;
+  }
+  .contactMeSubContainer {
+    width: 350px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    /* font-size: 2em; */
+  }
+  .header {
+    padding-top: 20px;
+  }
+  #liamPhoto {
+    max-width: 250px;
+  }
+  .intro-cont {
+    margin-top: 15vh;
+    width: 100%;
+    padding: 10px;
+  }
+  .introSection {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .introText {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #liamPhoto {
+    /* margin: 20px; */
+    max-width: 300px;
+  }
+}
